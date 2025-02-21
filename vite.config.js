@@ -9,4 +9,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server: {
+    host: "0.0.0.0", // Ensure it binds to the correct IP
+    port: process.env.PORT || 5173, // Use Render’s port
+  },
 })
